@@ -1,0 +1,34 @@
+.table-styled {
+    @apply w-full;
+    border-spacing: 0 4px;
+    border-collapse: separate;
+}
+
+.table-styled > thead > tr > th {
+    @apply bg-sand-light;
+    @apply py-4;
+    @apply px-7;
+}
+
+.table-styled > thead > tr > th:first-child {
+    @apply rounded-l-md;
+}
+
+.table-styled > thead > tr > th:last-child {
+    @apply rounded-r-md;
+}
+
+.table-styled > tbody > tr > td,
+.table-styled > tr > td {
+    @apply py-4;
+    @apply px-7;
+    @apply bg-sand-extra-light;
+}
+
+.table-styled tr td:first-child {
+    @apply rounded-l-md;
+}
+
+.table-styled tr td:last-child {
+    @apply rounded-r-md;
+}

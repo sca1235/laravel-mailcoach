@@ -1,0 +1,19 @@
+.fi-btn {
+    @apply button;
+    @apply border-0
+    shadow-none
+    rounded-full
+    !important;
+}
+
+.fi-btn.fi-btn-color-gray {
+    @apply bg-sand
+        text-navy-dark
+        hover:bg-sand-light
+        !important;
+}
+
+.fi-btn-icon {
+    @apply text-navy-dark
+        !important;
+}

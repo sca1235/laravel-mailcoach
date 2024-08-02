@@ -1,0 +1,80 @@
+.EasyMDEContainer {
+    @apply shadow-input;
+    @apply rounded-md;
+    @apply border;
+    @apply border-sand-bleak;
+}
+
+.EasyMDEContainer .editor-toolbar {
+    @apply flex;
+    @apply flex-wrap;
+    @apply gap-px;
+    @apply lg:sticky;
+    @apply lg:top-0;
+    @apply lg:z-10;
+    @apply w-full;
+    @apply max-w-full;
+    @apply min-h-10;
+    @apply px-2.5;
+    @apply bg-white;
+    @apply my-1;
+    @apply pb-3;
+}
+
+.EasyMDEContainer .editor-toolbar i.separator {
+    @apply hidden;
+}
+
+.EasyMDEContainer .editor-toolbar button {
+    @apply border-none;
+}
+
+.EasyMDEContainer .editor-toolbar button.active,
+.EasyMDEContainer .editor-toolbar button:hover {
+    @apply bg-sky-extra-light;
+}
+
+.EasyMDEContainer .editor-toolbar button.preview.active {
+    @apply bg-blue !important;
+    @apply text-white !important;
+}
+
+.EasyMDEContainer .editor-toolbar button.undo {
+    @apply ml-auto !important;
+}
+
+.EasyMDEContainer .editor-toolbar button.table {
+    display: inline-block !important;
+    min-width: auto !important;
+    margin-top: 0 !important;
+}
+
+.EasyMDEContainer .editor-toolbar button.link {
+    color: inherit !important;
+}
+
+.EasyMDEContainer .CodeMirror {
+    @apply w-full;
+    @apply max-w-full;
+    @apply px-2.5;
+    @apply rounded-b-md;
+    @apply bg-white;
+    @apply placeholder:text-navy/50;
+    @apply border-0 !important;
+}
+
+.EasyMDEContainer:hover .CodeMirror {
+    /* prevent flash when focusing in toolbar */
+    @apply bg-white;
+    @apply outline-none;
+}
+
+.EasyMDEContainer .editor-statusbar {
+    @apply text-navy;
+    @apply px-0;
+}
+
+.EasyMDEContainer .editor-statusbar span.upload-image {
+    @apply inline-block;
+    @apply min-w-0;
+}

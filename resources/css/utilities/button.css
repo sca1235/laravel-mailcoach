@@ -1,0 +1,156 @@
+.button,
+a.fi-btn,
+button.fi-btn,
+.fi-btn-color-danger {
+    @apply px-4;
+    @apply sm:px-6;
+    @apply h-10;
+    @apply sm:h-12;
+    @apply bg-blue-dark;
+    @apply text-white;
+    @apply whitespace-nowrap;
+    @apply text-xs;
+    @apply sm:text-sm;
+    @apply rounded-full;
+    @apply font-medium;
+    @apply inline-flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply gap-x-2;
+    @apply transition-colors;
+    @apply duration-300;
+    @apply leading-none;
+}
+
+.fi-btn {
+    @apply border;
+    @apply border-gray-400/30;
+}
+
+.button:disabled {
+    @apply opacity-50;
+    @apply cursor-not-allowed;
+}
+
+.button:not(:disabled):hover,
+.button:not(:disabled):focus,
+.fi-btn-color-danger:not(:disabled):hover,
+.fi-btn-color-danger:not(:disabled):focus,
+.button.dropdown-trigger-open {
+    @apply text-white;
+    @apply bg-blue;
+}
+
+.button:not(:disabled):focus {
+    @apply border-blue;
+}
+
+.button:not(:disabled):active {
+    @apply shadow-inner;
+    @apply translate-y-px;
+    @apply border-t-black/10;
+    @apply border-l-black/10;
+    @apply border-r-white/30;
+    @apply border-b-white/30;
+}
+
+.button-secondary {
+    @apply py-2
+        whitespace-nowrap
+        bg-white
+        border-2
+        border-navy
+        no-underline
+        text-navy;
+}
+
+.button-secondary:disabled {
+    @apply opacity-50;
+    @apply cursor-not-allowed;
+}
+
+.button-secondary:not(:disabled):hover,
+.button-secondary:not(:disabled):focus {
+    @apply bg-navy;
+    @apply text-white;
+}
+
+.button-secondary:not(:disabled):active {
+    @apply translate-y-px;
+}
+
+.button-tertiary {
+    @apply py-2
+    whitespace-nowrap
+    bg-sand-light
+    no-underline
+    text-navy;
+}
+
+.button-tertiary:disabled {
+    @apply opacity-50;
+    @apply cursor-not-allowed;
+}
+
+.button-tertiary:not(:disabled):hover,
+.button-tertiary:not(:disabled):focus {
+    @apply bg-sand;
+    @apply text-navy;
+}
+
+.button-tertiary:not(:disabled):active {
+    @apply translate-y-px;
+}
+
+.button + .button {
+    @apply ml-2;
+}
+
+.button + .button-secondary,
+.button + .button-link,
+.button-secondary + .button-secondary {
+    @apply ml-4;
+}
+
+.button-link {
+    @apply underline;
+}
+
+.button-link:hover,
+.button-link:focus {
+    @apply text-blue-dark;
+}
+
+.button-red,
+button.fi-btn-color-danger {
+    @apply bg-red;
+}
+
+.button-red:not(:disabled):hover,
+.button-red:not(:disabled):focus,
+.fi-btn-color-danger:not(:disabled):hover,
+.fi-btn-color-danger:not(:disabled):focus,
+.button-red.dropdown-trigger-open {
+    @apply bg-red-dark;
+}
+
+.button.button-rounded {
+    @apply p-0;
+    @apply h-6;
+    @apply w-6;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply rounded-full;
+    @apply text-sm;
+    @apply text-white;
+}
+
+.button.button-green,
+.fi-btn-color-success {
+    @apply bg-green;
+}
+
+.button.button-orange {
+    @apply bg-orange;
+}

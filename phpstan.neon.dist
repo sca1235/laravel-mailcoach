@@ -1,0 +1,39 @@
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    paths:
+        - src/
+
+    # Level 9 is the highest level
+    level: 4
+
+    checkOctaneCompatibility: false
+    checkModelProperties: false
+    reportUnmatchedIgnoredErrors: false
+    noUnnecessaryCollectionCall: true
+    checkNullables: true
+    editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
+    treatPhpDocTypesAsCertain: false
+
+    databaseMigrationsPath:
+        - database/migrations
+
+    excludePaths:
+
+    ignoreErrors:
+        - identifier: missingType.iterableValue
+        - '#Unsafe usage of new static#'
+        - '#Call to an undefined method Illuminate\\Support\\HigherOrder#'
+        - '#Call to an undefined method Spatie\\Flash\\Flash#'
+        - '#Static call to instance method Carbon\\CarbonImmutable::parseOptional\(\)#'
+        - '#Call to an undefined method Illuminate\\Database\\Eloquent\\Model::getUuid\(\)#'
+        - '#Parameter \#1 \$separator of function explode expects non-empty-string, string given#'
+        - '#Call to private method withoutGlobalScope#'
+        - '#Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection#'
+        - '#Parameter \#1 \$callback of method Illuminate\\Support\\Collection#'
+        - '#Parameter \#1 \$callback of method Illuminate\\Support\\LazyCollection#'
+        - '#Parameter \#1 \$groupBy of method Illuminate\\Support\\Collection#'
+
+        # Can be removed once Carbon PHPStan bug is fixed
+        - '#Method Carbon\\CarbonImmutable::parseOptional\(\) invoked with 1 parameter, 0 required.#'

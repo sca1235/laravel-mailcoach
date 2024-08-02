@@ -1,0 +1,25 @@
+.link {
+    @apply text-blue-dark !important;
+    @apply underline;
+    text-underline-offset: 2px;
+}
+
+.link span,
+.link div {
+    @apply text-blue-dark !important;
+    @apply underline;
+}
+
+.link:hover {
+    @apply text-blue;
+}
+
+.link-danger {
+    @apply text-gray-600;
+    @apply underline;
+}
+
+.link-danger:hover {
+    @apply !text-red;
+    @apply underline;
+}

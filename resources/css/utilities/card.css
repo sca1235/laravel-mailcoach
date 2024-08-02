@@ -1,0 +1,56 @@
+.card-grid {
+    @apply flex-grow;
+    @apply grid;
+    @apply gap-y-8;
+    @apply max-w-full;
+}
+
+.card {
+    @apply p-4;
+    @apply sm:p-6;
+    @apply md:p-12;
+    @apply bg-white;
+    @apply rounded-2xl;
+    @apply shadow-card;
+}
+
+.card .card-top-level {
+    /* fix for nested automations category list */
+    @apply bg-transparent;
+    @apply shadow-none;
+    @apply border-none;
+}
+
+.card.card-focus {
+    @apply border-blue;
+    @apply shadow-md;
+    @apply shadow-blue/20;
+}
+
+.card-buttons {
+    @apply sticky;
+    @apply z-10;
+    @apply -bottom-px;
+    @apply -mx-6;
+    @apply -mt-3;
+    @apply px-6;
+    @apply py-3;
+    @apply bg-transparent;
+    @apply transition-all;
+    @apply border;
+    @apply border-transparent;
+    @apply rounded-t-xl;
+}
+
+.card-buttons-stuck {
+    @apply bg-white;
+    @apply border-t-snow;
+    @apply border-r-snow;
+    @apply border-l-snow;
+    @apply p-5;
+}
+
+.card::-webkit-scrollbar {
+    height: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+}

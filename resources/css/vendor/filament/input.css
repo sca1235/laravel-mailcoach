@@ -1,0 +1,9 @@
+.fi-fo-field-wrp-label span {
+    @apply text-navy;
+    @apply text-sm;
+    @apply font-medium;
+}
+
+.fi-input:not([type='search']) {
+    @apply input;
+}

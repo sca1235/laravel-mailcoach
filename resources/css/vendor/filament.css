@@ -1,0 +1,39 @@
+@import 'filament/modal.css';
+@import 'filament/table.css';
+@import 'filament/btn.css';
+@import 'filament/dropdown.css';
+@import 'filament/input.css';
+
+.fi-modal-window {
+    @apply card;
+    @apply p-0;
+}
+
+.tippy-content {
+    @apply text-black;
+}
+
+ol.bg-white.shadow-sm:has(li > button.fi-pagination-item) {
+    @apply border border-indigo-700/20;
+    @apply rounded-md;
+    @apply shadow-blue/5;
+}
+
+ol.bg-white.shadow-sm:has(li > button.fi-pagination-item) > li {
+    @apply border-blue/5;
+}
+
+.fi-fo-affixes {
+    @apply border border-indigo-700/20;
+    @apply rounded-md;
+    @apply shadow-blue/5;
+}
+
+.fi-fo-affixes .fi-select-input {
+    @apply py-1.5;
+    min-height: 0;
+}
+
+.max-w-\[14rem\] {
+    max-width: 14rem;
+}

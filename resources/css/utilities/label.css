@@ -1,0 +1,26 @@
+.label {
+    @apply flex;
+    @apply items-center;
+    @apply pr-4;
+    @apply font-medium;
+    @apply text-sm;
+}
+
+.label-required:after {
+    content: '*';
+    font-weight: 900;
+    @apply inline-block;
+    @apply text-[14px];
+    @apply leading-none;
+    @apply rounded-full;
+    @apply w-2.5;
+    @apply h-2.5;
+    @apply flex;
+    @apply items-start;
+    @apply justify-center;
+    @apply ml-1;
+    @apply -mt-1.5;
+    @apply bg-sky-extra-light;
+    @apply text-blue-dark;
+    padding-top: 0;
+}

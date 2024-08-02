@@ -1,0 +1,1 @@
+{!! $originalMail->contentItem->html !!}

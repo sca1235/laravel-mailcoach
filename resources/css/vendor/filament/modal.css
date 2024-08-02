@@ -1,0 +1,54 @@
+.fi-modal-window {
+    @apply rounded-md !important;
+}
+
+div:has(> .fi-modal-window) {
+    @apply p-2;
+}
+
+.fi-modal-window.fi-modal-slide-over-window {
+    @apply rounded-xl !important;
+    @apply p-0 !important;
+    height: calc(100vh - 1rem);
+    min-height: calc(100vh - 1rem);
+}
+
+.fi-modal-slide-over-window .fi-modal-content {
+    overflow-y: scroll;
+}
+
+.fi-modal-header {
+    @apply bg-white;
+    @apply py-6 !important;
+    @apply font-medium;
+    @apply border-b;
+    @apply border-solid;
+    @apply border-snow;
+    @apply rounded-t-lg;
+    @apply text-lg;
+}
+
+.fi-modal-header .fi-icon-btn {
+    @apply w-12;
+    @apply h-12;
+}
+
+.fi-modal-header .fi-icon-btn-icon {
+    @apply text-blue-dark;
+    @apply w-4;
+    @apply h-4;
+}
+
+.fi-modal-header .fi-modal-heading {
+    @apply text-navy;
+    @apply text-lg;
+    @apply font-medium;
+}
+
+.fi-modal-content {
+    max-height: calc(100vh - 90px);
+}
+
+.fi-modal-footer-actions {
+    @apply gap-6 !important;
+}

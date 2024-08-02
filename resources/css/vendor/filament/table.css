@@ -1,0 +1,398 @@
+.fi-ta .fi-ta-ctn {
+    @apply bg-sand-extra-light;
+    @apply shadow-none;
+    @apply rounded-none;
+}
+
+.fi-ta-row td {
+    @apply bg-white;
+    @apply h-14;
+}
+
+.fi-ta-row td:first-child {
+    @apply rounded-l-md;
+}
+
+.fi-ta-row td:last-child {
+    @apply rounded-r-md;
+}
+
+.fi-ta-search-field .fi-input-wrp {
+    @apply shadow-none;
+    @apply rounded-lg;
+    @apply gap-x-1.5;
+}
+
+.fi-ta-search-field .fi-input {
+    @apply h-12;
+    @apply text-navy;
+    @apply text-sm;
+    @apply font-medium;
+}
+
+.fi-ta-search-field .fi-input:focus {
+    @apply ring-transparent;
+}
+
+.fi-ta-search-field .fi-input-wrp-icon {
+    @apply text-navy;
+}
+
+.fi-ta-search-field .fi-input::placeholder {
+    @apply text-navy;
+}
+
+.fi-ta-table {
+    border-collapse: separate;
+    border-spacing: 0 4px;
+}
+
+.fi-ta-table thead tr {
+}
+
+.fi-ta-table thead th {
+    @apply bg-sand-light;
+    @apply h-14;
+}
+
+.fi-ta-header-toolbar {
+    @apply p-0 !important;
+    @apply justify-end !important;
+    @apply gap-x-6 !important;
+    flex-direction: row-reverse;
+}
+
+.fi-ta-header-toolbar .ms-auto {
+    @apply mr-0;
+    @apply ml-0;
+}
+
+.fi-ta .fi-ta-header-ctn {
+    @apply mb-9;
+    @apply divide-transparent;
+}
+
+.fi-ta-content {
+    @apply border-none;
+}
+
+.fi-ta-ctn .fi-ta-selection-indicator,
+.fi-ta-ctn .fi-ta-filter-indicators {
+    @apply mb-0.5;
+    @apply bg-white;
+    @apply border-none;
+    @apply py-3;
+    @apply rounded-lg;
+}
+
+.fi-ta-ctn .fi-ta-selection-indicator .text-gray-700 {
+    @apply text-navy;
+    font-size: 14px;
+}
+
+.fi-ta-table .fi-ta-header-cell-label {
+    @apply text-navy-dark;
+}
+
+.fi-ta-table .fi-ta-header-cell-sort-icon {
+    @apply bg-sand-extra-light;
+    @apply rounded-full;
+    @apply w-4;
+    @apply h-4;
+    @apply text-sand-dark;
+    @apply ml-1;
+}
+
+.fi-ta-table .fi-icon-btn-badge-ctn span {
+    @apply bg-sand-extra-light;
+    @apply text-sand-dark;
+}
+
+.fi-ta-table .fi-ta-filters {
+}
+
+.fi-ta .fi-ta-filters h4 {
+    @apply text-navy;
+    @apply font-medium;
+    @apply text-lg;
+}
+
+.fi-ta .fi-ta-filters .fi-link[wire\:target='resetTableFiltersForm'] {
+    @apply no-underline;
+}
+
+.fi-ta .fi-ta-filters .fi-link[wire\:target='resetTableFiltersForm'] span {
+    @apply text-red;
+    @apply no-underline;
+    @apply text-sm;
+    @apply font-medium;
+    @apply hover:underline;
+}
+
+.fi-ta-table .fi-ta-filters-dropdown {
+    @apply pr-2;
+    @apply pl-4;
+}
+
+.fi-ta-table .fi-ta-filters-dropdown.active .fi-icon-btn {
+    @apply text-blue-dark;
+}
+
+.fi-ta-table .fi-ta-filters-dropdown.active .fi-icon-btn-badge-ctn span {
+    @apply text-blue-dark;
+}
+
+.fi-ta-table thead th:first-child {
+    @apply rounded-l-lg;
+}
+
+.fi-ta-table thead th:last-child {
+    @apply rounded-r-lg;
+}
+
+.fi-ta-table .fi-ta-filter-indicators {
+    @apply bg-transparent;
+    @apply text-right;
+    @apply justify-end;
+    @apply items-center;
+    @apply pr-0;
+    @apply pt-3;
+    @apply pb-0;
+}
+
+.fi-ta-table .fi-ta-filter-indicators > div {
+    @apply items-center;
+}
+
+.fi-ta-table .fi-ta-filter-indicators > div > span {
+    @apply text-navy-dark;
+    font-size: 14px;
+}
+
+.fi-ta-table .fi-ta-filter-indicators .fi-badge {
+    @apply bg-sky-extra-light;
+    @apply text-navy;
+    @apply text-xs;
+    @apply py-1.5;
+    @apply rounded-full;
+    @apply px-4;
+    @apply font-medium;
+}
+
+.fi-ta-table .fi-ta-filter-indicators .fi-badge-delete-button {
+    @apply text-blue-dark;
+}
+
+.fi-ta-table .fi-ta-filter-indicators .fi-badge-delete-button svg {
+    @apply w-4;
+    @apply h-4;
+}
+
+.fi-ta-table .fi-ta-filter-indicators .mt-0\.5:has(button) {
+    display: none;
+}
+
+.fi-ta-table tbody {
+    @apply border-none;
+}
+
+.fi-ta-table .fi-ta-icon-item {
+    @apply w-5;
+    @apply h-5;
+}
+
+.fi-ta-table .fi-ta-text-item {
+    @apply text-sm;
+}
+
+.fi-ta-table .fi-ta-text-item-label {
+    @apply text-sm;
+}
+
+.fi-ta-table .fi-ta-row:has(.fi-ta-group-header) td:first-child {
+    display: none;
+}
+
+.fi-ta-table td:has(.fi-ta-group-header),
+.fi-ta-table .fi-ta-group-header {
+    @apply bg-transparent;
+}
+
+.fi-ta-table .fi-checkbox-input {
+    @apply border-2;
+    @apply border-solid;
+    @apply border-sand;
+    @apply shadow-none;
+}
+
+.fi-ta-table .fi-checkbox-input:checked {
+    @apply text-blue;
+    @apply border-blue;
+    @apply bg-white;
+}
+
+.\[\&\>\*\:first-child\]\:before\:bg-primary-600 > *:first-child::before {
+    @apply bg-white !important;
+    @apply border-l-2 !important;
+    @apply border-blue !important;
+    @apply w-1 !important;
+    @apply rounded-l-md;
+    @apply relative;
+}
+
+.fi-ta-table .fi-checkbox-input:focus {
+    @apply ring-blue !important;
+}
+
+.fi-ta-table .fi-ta-group-header {
+    @apply px-0;
+}
+
+.fi-ta-table .fi-ta-group-header h4 {
+    @apply text-xl;
+    @apply font-medium;
+    @apply text-navy;
+    @apply mt-5;
+    @apply mb-2;
+}
+
+.fi-ta-table .fi-ta-cell {
+    @apply border-t-0;
+}
+
+.fi-pagination {
+    @apply border-none;
+    @apply flex !important;
+    @apply justify-end;
+    @apply pr-0 !important;
+}
+
+.fi-pagination .fi-pagination-items {
+    @apply bg-transparent;
+    @apply shadow-none;
+    @apply gap-x-2;
+}
+
+.fi-pagination .fi-pagination-item:not([rel]) {
+    display: none;
+}
+
+.fi-pagination .fi-pagination-item {
+    @apply border-0;
+}
+
+.fi-pagination .fi-pagination-item[rel='prev'] .fi-pagination-item-button,
+.fi-pagination .fi-btn.fi-pagination-previous-btn {
+    @apply w-5 !important;
+    @apply h-5 !important;
+    @apply p-0 !important;
+    @apply border-0;
+    order: 2;
+    background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2020%2020%22%3E%3Crect%20width%3D%2220%22%20height%3D%2220%22%20fill%3D%22%23EBE8DD%22%20rx%3D%2210%22%2F%3E%3Cpath%20fill%3D%22%237F7A6C%22%20fill-rule%3D%22evenodd%22%20d%3D%22M12.32%206.042%208.368%209.97l3.952%203.928-1.047%201.042-5-4.97%205-4.97%201.047%201.042Z%22%20clip-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E')
+        no-repeat;
+}
+
+.fi-pagination .fi-pagination-item[rel='next'] .fi-pagination-item-button,
+.fi-pagination .fi-btn.fi-pagination-next-btn {
+    @apply w-5 !important;
+    @apply h-5 !important;
+    @apply p-0 !important;
+    @apply border-0;
+    order: 3;
+    background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2020%2020%22%3E%3Crect%20width%3D%2220%22%20height%3D%2220%22%20fill%3D%22%23EBE8DD%22%20rx%3D%2210%22%2F%3E%3Cpath%20fill%3D%22%237F7A6C%22%20fill-rule%3D%22evenodd%22%20d%3D%22m7.68%206.042%203.952%203.928-3.952%203.928%201.048%201.042%205-4.97-5-4.97L7.68%206.042Z%22%20clip-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E')
+        no-repeat;
+}
+
+.fi-pagination .fi-btn-label {
+    display: none;
+}
+
+.fi-pagination-overview {
+    @apply block;
+}
+
+.fi-dropdown-trigger button {
+    @apply text-blue;
+}
+
+.fi-ta-filters-dropdown button {
+    @apply text-blue-dark;
+    @apply hover:text-blue;
+}
+
+.fi-ta-filters-dropdown button .fi-icon-btn-badge-ctn .fi-badge {
+    @apply bg-sand;
+    @apply text-blue-dark;
+}
+
+.fi-ta-empty-state {
+    @apply card;
+}
+
+.fi-ta-header .fi-ta-actions {
+    @apply mb-6;
+    @apply sm:-mb-24;
+    @apply relative;
+    @apply z-20;
+}
+
+.fi-ta .fi-ta-header {
+    @apply border-0;
+    @apply pr-0;
+    @apply p-0;
+}
+
+.fi-ta .fi-link,
+.fi-ta .fi-link span {
+    @apply text-navy;
+    @apply underline;
+}
+
+.fi-ta .fi-ta-empty-state {
+    @apply py-20;
+    @apply mb-0.5;
+}
+
+.fi-ta-empty-state .fi-ta-empty-state-icon-ctn {
+    @apply p-6;
+    @apply bg-sand-extra-light;
+}
+
+.fi-ta-empty-state .fi-ta-empty-state-icon {
+    @apply w-14;
+    @apply h-14;
+    @apply text-sand;
+}
+
+.fi-ta .fi-ta-empty-state-content {
+    @apply max-w-2xl;
+}
+
+.fi-ta .fi-ta-empty-state-heading {
+    @apply text-xl;
+    @apply font-medium;
+    @apply text-navy;
+    @apply mb-1;
+}
+
+.fi-ta .fi-ta-empty-state-description {
+    @apply text-navy;
+    @apply text-base;
+}
+
+.fi-dropdown-trigger {
+    @apply transition-transform;
+    @apply duration-200;
+}
+
+.fi-ta-row .fi-dropdown-trigger[aria-expanded='true'] {
+    @apply rotate-90;
+}
+
+.fi-ac-link-action span {
+    @apply font-normal;
+}
+
+.fi-ac-link-action:hover span {
+    @apply no-underline !important;
+}

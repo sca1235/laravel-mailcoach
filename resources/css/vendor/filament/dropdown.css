@@ -1,0 +1,41 @@
+.fi-dropdown-panel {
+    @apply shadow-dropdown !important;
+    @apply border border-sand-bleak;
+    @apply rounded-xl;
+}
+
+.fi-dropdown-panel .fi-select-input {
+    @apply input;
+}
+
+.fi-dropdown-panel .fi-dropdown-list {
+    @apply rounded-xl;
+    @apply p-1;
+}
+
+.fi-dropdown-panel .fi-dropdown-list-item {
+    @apply px-5;
+    @apply py-3;
+    @apply hover:bg-sand-extra-light;
+}
+
+.fi-dropdown-panel .fi-dropdown-list-item-color-danger {
+    @apply hover:bg-red-extra-light;
+}
+
+.fi-dropdown-panel .fi-dropdown-list-item .fi-dropdown-list-item-icon {
+    @apply text-navy;
+}
+
+.fi-dropdown-panel .fi-dropdown-list-item-color-danger .fi-dropdown-list-item-icon {
+    @apply text-red;
+}
+
+.fi-dropdown-panel .fi-dropdown-list-item .fi-dropdown-list-item-label {
+    @apply text-navy;
+}
+
+.fi-dropdown-panel .fi-dropdown-list-item-color-danger .fi-dropdown-list-item-label {
+    @apply text-red;
+    @apply font-medium;
+}
