@@ -19,7 +19,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^8.3",
+        "php": "^8.2||^8.3",
         "ext-dom": "*",
         "ext-libxml": "*",
         "ext-zip": "*",
